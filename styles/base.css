@@ -106,36 +106,26 @@ main{
     height: 115px;
     flex-shrink: 0;
     position: absolute;
-    bottom: 20px;
 }
 
 .card .haiti p{
     margin-left: 12rem;
 }
 
-.resources h2{
-    background-color: #005f7f;
-    color: white;
-    margin: -20px -20px 20px -20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    text-align: center;
-}
-
-.resources ul{
+.card ul{
     padding-top: 80px;
 }
 
-.resources li{
+.card li{
     margin-bottom: 10px;
 }
 
-.resources a{
+.card a{
     color: #005f7f;
     text-decoration: none;
 }
 
-.resources a:hover{
+.card a:hover{
     text-decoration: underline;
 }
 
