@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
+
+
+:root{
+    --primary-color: #1d1e18;
+    --secondary-color: #c08552;
+    --accent1-color: #2a2723;
+    --accent2-color: #ece2d0;
+    --heading-font: 'Jaro', sans serif;
+    --paragraph-font:'oswald', sans serif;
+    --nav-background-color: #ece2d0;
+    --nav-link-color: #895737;
+    --nav-hover-link-color:var(--accent1-color);
+    --nav-hover-background-color:var(--secondary-color);
+    }
+
 body{
     max-width: 950px;
     margin: 0 auto;
@@ -7,13 +23,14 @@ body{
 }
 
 header{
-    background-color: #005f7f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     text-align: center;
+    font-family: var(--heading-font);
 }
 
 nav{
-    background-color: black;
+    background-color: var(--nav-link-color);
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -21,11 +38,12 @@ nav{
 }
 
 nav a{
-    color: white;
+    color: var(--nav-background-color);
     margin: 0 10px;
     text-decoration: none;
     position: relative;
     padding: 5px 0;
+    font-family: var(--paragraph-font);
 }
 
 nav a::before{
@@ -35,7 +53,7 @@ nav a::before{
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: steelblue;
+    background-color: var(--accent1-color);
     transition: all 0.2s ease-in-out;
 }
 
@@ -63,8 +81,8 @@ main{
 }
 
 .card h2{
-    background-color: #005f7f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     padding: 10px;
     margin: -20px -20px 20px -20px;
     border-top-left-radius: 8px;
@@ -130,9 +148,10 @@ main{
 }
 
 footer{
-    background-color: #005f7f;
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
+    border-radius: 8px;
     padding: 1px;
     border-top: 1px solid #ccc;
 }
