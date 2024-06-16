@@ -1,13 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oswald:wght@200..700&display=swap');
-
-
 :root{
     --primary-color: #1d1e18;
     --secondary-color: #c08552;
     --accent1-color: #2a2723;
     --accent2-color: #ece2d0;
-    --heading-font: 'Jaro', sans serif;
-    --paragraph-font:'oswald', sans serif;
     --nav-background-color: #ece2d0;
     --nav-link-color: #895737;
     --nav-hover-link-color:var(--accent1-color);
@@ -26,7 +21,7 @@ header{
     background-color: var(--primary-color);
     color: var(--accent2-color);
     text-align: center;
-    font-family: var(--heading-font);
+    font-family: 'Jaro', sans-serif;
 }
 
 nav{
@@ -43,7 +38,7 @@ nav a{
     text-decoration: none;
     position: relative;
     padding: 5px 0;
-    font-family: var(--paragraph-font);
+    font-family: 'oswald', sans-serif;
 }
 
 nav a::before{
