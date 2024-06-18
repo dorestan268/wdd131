@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
 :root{
-    --primary-color: #1d1e18;
-    --secondary-color: #c08552;
-    --accent1-color: #2a2723;
-    --accent2-color: #ece2d0;
-    --nav-background-color: #ece2d0;
-    --nav-link-color: #895737;
+    --background-color: #042a2b;
+    --background-color1: #004e64;
+    --background-color2: #042a2b;
+    --text-color: white;
+    --accent1-color: #AAD8D3;
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--secondary-color);
     }
@@ -18,14 +19,16 @@ body{
 }
 
 header{
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    margin-top: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
-    font-family: 'Jaro', sans-serif;
+    font-family: 'roboto', slab serif;
+    border-radius: 15px;
 }
 
 nav{
-    background-color: var(--nav-link-color);
+    background-color: var(--background-color1);
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -33,7 +36,7 @@ nav{
 }
 
 nav a{
-    color: var(--nav-background-color);
+    color: var(--text-color);
     margin: 0 10px;
     text-decoration: none;
     position: relative;
@@ -48,7 +51,7 @@ nav a::before{
     height: 2px;
     bottom: 0;
     left: 50%;
-    background-color: var(--accent1-color);
+    background-color: var(--background-color);
     transition: all 0.2s ease-in-out;
 }
 
@@ -68,7 +71,7 @@ main{
 
 .card{
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 0;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -76,12 +79,13 @@ main{
 }
 
 .card h2{
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+    background-color: var(--background-color2);
+    font-family: 'open sans', sans serif;
+    color: var(--text-color);
     padding: 10px;
     margin: -20px -20px 20px -20px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     text-align: center;
 }
 
@@ -143,14 +147,14 @@ main{
 }
 
 footer{
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: white;
     text-align: center;
-    border-radius: 8px;
-    padding: 1px;
+    border-radius: 0  0 15px 15px;
+    margin-bottom: 20px;
     border-top: 1px solid #ccc;
 }
 
 #lastModified{
-    color: peru;
+    color: white;
 }
