@@ -102,6 +102,7 @@ figcaption {
     margin-top: 0.5rem;
 }
 
+
 footer {
     background-color: #4a148c;
     color: white;
@@ -113,7 +114,7 @@ footer {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 511px) {
     .menu-toggle {
         display: block;
     }
