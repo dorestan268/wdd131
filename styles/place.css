@@ -36,7 +36,7 @@ header h1 {
     left: 20px;
 }
 .weather {
-    bottom: -50%;
+    bottom: -60%;
     right: 20px;
 }
 
@@ -65,7 +65,14 @@ footer {
     
 }
 
-img {
+picture {
+    display: block;
     width: 100%;
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 

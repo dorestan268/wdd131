@@ -18,7 +18,13 @@
     
    <main>
     <div class="container">
-        <img srcset="images/temple-2.jpg" alt="temple Haiti">
+        <!-- <img src="images/haiti.webp" alt="temple Haiti"> -->
+
+        <picture>
+            <source srcset="images/haiti.webp" media="min-width: 1000px">
+            <source srcset="images/haiti.webp" media="min-width: 550px">
+            <img src="images/haiti.webp" alt="Haiti" width="400" height="200">
+        </picture>
 
             <!-- The Data -->
         <div class="data">
