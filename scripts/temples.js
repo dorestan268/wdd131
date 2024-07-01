@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('open');
-        toggleMenuButtons(); // Toggle menu buttons based on nav state
+        toggleMenuButtons(); 
     });
 
     function toggleMenuButtons() {
