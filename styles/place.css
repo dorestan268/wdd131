@@ -133,5 +133,7 @@ picture img {
     .weather img {
         position: static;
         margin: 0 auto 15px;
+        width: 70px;
+        height: auto;
     }
 }
