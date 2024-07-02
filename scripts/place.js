@@ -4,8 +4,8 @@
 
   // Function to fetch weather data from OpenWeatherMap API
   function fetchWeather() {
-    const apiKey = '9f26309485957c2bd9641a631b5817c8'; // Replace with your OpenWeatherMap API key
-    const city = 'port-au-prince'; // Replace with your desired city name
+    const apiKey = '9f26309485957c2bd9641a631b5817c8'; 
+    const city = 'Haiti'; // Replace with your desired city name
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
@@ -29,12 +29,12 @@
             windSpeedElement.textContent = `${data.wind.speed} m/s`;
 
             // Calculate and display wind chill (example calculation)
-            const windChill = calculateWindChill(data.main.temp, data.wind.speed);
-            windChillElement.textContent = `${windChill} °C`;
+            let windChill = calculateWindChill(data.main.temp, data.wind.speed);
+            windChillElement.textContent = `${windChill.toFixed(2)} °C`;
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
-            const weatherDataElements = document.querySelectorAll('.weather p span');
+            let weatherDataElements = document.querySelectorAll('.weather p span');
             weatherDataElements.forEach(element => {
                 element.textContent = 'N/A';
             });
@@ -43,7 +43,6 @@
 
 // Function to calculate wind chill (example calculation)
 function calculateWindChill(temperature, windSpeed) {
-    // Example simplified wind chill calculation for demonstration
     return temperature - windSpeed;
 }
 

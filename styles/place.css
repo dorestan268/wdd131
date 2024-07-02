@@ -8,6 +8,7 @@
     --heading-bg-color: #008000;
     --opacity-level: 0.7;
     --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    --heading: 'roboto', serif;
 }
 
 /* Global styles */
@@ -24,6 +25,7 @@ header {
 }
 
 header h1 {
+    font-family: var(--heading) ;
     color: var(--header-footer-color);
     text-align: center;
     font-size: 2em;
@@ -95,7 +97,7 @@ picture img {
     display: block;
 }
 
-/* Media query for smaller screens up to 512px */
+/* Media query for smaller screens */
 @media (max-width: 1253px) {
     .container {
         flex-direction: column;
@@ -127,7 +129,7 @@ picture img {
     }
 
     .weather {
-        max-width: 100%; /* Full width for mobile devices */
+        max-width: 100%; 
     }
 
     .weather img {
