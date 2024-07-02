@@ -127,7 +127,7 @@ picture img {
     }
 
     .weather {
-        width: 100%; /* Full width for mobile devices */
+        width: 1253px; /* Full width for mobile devices */
     }
 
     .weather img {
