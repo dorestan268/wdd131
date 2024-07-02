@@ -126,6 +126,10 @@ picture img {
         color: black;
     }
 
+    .weather {
+        width: 100%; /* Full width for mobile devices */
+    }
+
     .weather img {
         position: static;
         margin: 0 auto 15px;
