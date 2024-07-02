@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
 /* Global variables */
 :root {
     --primary-color: #b90000;
     --secondary-color: darkgreen;
     --background-color: whitesmoke;
-    --text-color: #333;
+    --text-color: black;
     --header-footer-color: white;
     --heading-bg-color: #008000;
     --opacity-level: 0.7;
     --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    --headind1: 'marhey', sans-serif;
     --paragraph: 'roboto',sans-serif;
     --heading: 'anton SC',sans-serif; 
 }
@@ -29,7 +27,7 @@ header {
 }
 
 header h1 {
-    font-family: var(--heading) ;
+    font-family: var(--headind1) ;
     color: var(--header-footer-color);
     text-align: center;
     font-size: 3rem;
@@ -38,11 +36,12 @@ header h1 {
 
 /* Main container styles */
 .container {
+    font-family: var(--heading);
     border-top: 15px solid var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Ensure positioning context for absolute children */
+    position: relative; 
 }
 
 /* Data and Weather section styles */
@@ -81,6 +80,7 @@ header h1 {
 
 /* Heading styles for Data and Weather sections */
 .data h2, .weather h2 {
+    font-family: var(--headind1);
     background-color: var(--heading-bg-color);
     color: var(--header-footer-color);
     padding:10px 10px 10px 15px;
