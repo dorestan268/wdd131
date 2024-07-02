@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* Global variables */
 :root {
     --primary-color: #b90000;
@@ -8,12 +11,13 @@
     --heading-bg-color: #008000;
     --opacity-level: 0.7;
     --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    --heading: 'roboto', serif;
+    --paragraph: 'roboto',sans-serif;
+    --heading: 'anton SC',sans-serif; 
 }
 
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--paragraph);
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -28,7 +32,7 @@ header h1 {
     font-family: var(--heading) ;
     color: var(--header-footer-color);
     text-align: center;
-    font-size: 2em;
+    font-size: 3rem;
     margin: 0;
 }
 
@@ -59,6 +63,12 @@ header h1 {
 .weather {
     top: 50%;
     right: 20px;
+}
+
+.weather h2::after {
+    content: url('images/weather.svg');
+    display: inline-block;
+    margin-left: 10px;
 }
 
 /* Weather icon styles */
