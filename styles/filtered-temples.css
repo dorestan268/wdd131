@@ -121,22 +121,6 @@ main h2 {
     color: darkslateblue;
   }
 
-/* figure {
-    margin: 0 0 1rem 0;
-    text-align: center;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-}
-
-figcaption {
-    font-family: 'oswald', sans-serif;
-    font-weight: bold;
-    margin-top: 0.5rem;
-} */
-
 
 footer {
     background-color: #4a148c;
@@ -153,6 +137,12 @@ footer {
     .menu-toggle {
         display: block;
     }
+
+    .temple {
+        background-color: rgb(223, 221, 221);
+        border: 1px solid black;
+        margin: 10px;
+      }
 
    
 }
