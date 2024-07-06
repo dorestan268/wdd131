@@ -88,8 +88,8 @@ main h2 {
 }
 
 .temple {
-    background-color: rgb(210, 210, 210);
-    border: 1px solid #ccc;
+    background-color: rgb(223, 221, 221);
+    border: 1px solid black;
     padding: 10px;
   }
 
@@ -111,13 +111,14 @@ main h2 {
   
   .temple p {
     text-align: center;
-    font-size: 0.9em;
-    margin: 0.5em;
+    font-size: 0.8rem;
+    margin: 0.5rem;
     color: #666;
   }
   
+
   .temple p strong {
-    color: #333;
+    color: darkslateblue;
   }
 
 /* figure {
@@ -152,4 +153,6 @@ footer {
     .menu-toggle {
         display: block;
     }
+
+   
 }
