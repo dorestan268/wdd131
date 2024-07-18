@@ -30,7 +30,6 @@ body {
 .review-container label {
     display: block;
     margin-bottom: 5px;
-    display: block;
     font-weight: 700;
 }
     
@@ -120,10 +119,12 @@ label span {
 
 
 
-@media (max-width: 32rem) {
+@media (max-width: 512px) {
     .stars {
         display: flex;
     }
+
+
 } 
 
 
