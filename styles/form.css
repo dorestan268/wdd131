@@ -121,8 +121,8 @@ label span {
 
 
 @media only screen and (max-widht: 32rem) {
-    .stars {
-        width: 100px;
+    .star-label {
+        display: block;
     }
 } 
 
