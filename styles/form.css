@@ -114,13 +114,15 @@ label span {
     color: #111111;
 } 
 
+.star-label label {
+    font-size: 24px; 
+}
 
 
 
-@media only screen and (max-widht: 32rem) {
-    .star-label {
-        display: block;
-        width: 32rem;
+@media (max-width: 32rem) {
+    .stars {
+        display: flex;
     }
 } 
 
