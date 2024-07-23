@@ -498,7 +498,7 @@ fieldset button a:hover {
 
 /* Responsive Media */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 512px) {
     .foodsControl {
         flex: 1 calc(33.333% - 40px);
     }
@@ -573,9 +573,10 @@ fieldset button a:hover {
     }
 
     .statusBar {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        display: block;
     }
 
     .statusMain {
@@ -583,60 +584,61 @@ fieldset button a:hover {
         margin: -40px 0 20px 0;
     }
 
-    .weather {
+    /* .weather {
         margin-top: -70px;
         height: 30%;
         width: 30%;
         text-align: left;
         margin-left: 20px;
         border: 1px solid black;
-    }
+    } */
 
-    .weather img {
+    /* .weather img {
         width: 20px;
         height: 20px;
         margin-left: 50%;
         margin-top: -40px;
-    }
+    } */
 
-    .weather h2, p, .weather span {
+    /* .weather h2, p, .weather span {
         font-size: 12px;
         position: relative;
-    }
+        display: block;
+    } */
 
-    .weather h2 {
+    /* .weather h2 {
         opacity: 1;
         background-color: aliceblue;
         color: black;
         border: 1px solid black;
         border-radius: 10px;
-    }
+    } */
 
 
-    .statusMain img {
+    /* .statusMain img {
         margin-left: 10px;
         width: 20px;
         height: 10px;
-    }
+    } */
     
-    .status2 img {
+    /* .status2 img {
         margin-left: 20px;
         width: 10px; 
-    }
+    } */
 
-    .status2 h1 {
+    /* .status2 h1 {
         margin-left: 20px;
-    }
+    } */
 
-    .statusMain h1 {
+    /* .statusMain h1 {
         margin-left: 5px;
         font-size: 15px;
-    }
+    } */
     
-    .statusMain p {
+    /* .statusMain p {
         color: black;
         font-size: 10px;
         font-style: italic;
         font-weight: bold;
-    }
+    } */
 }
