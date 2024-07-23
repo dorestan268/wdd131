@@ -1,0 +1,159 @@
+:root{
+    --logofont: "Black Ops One", system-ui;
+    --headingfont: "Orbitron", sans-serif;
+    --paragraphfont: "Chakra Petch", sans-serif;
+    --background-color: #042a2b;
+    --background-color1: #004e64;
+    --background-color2: #042a2b;
+    --text-color: white;
+    --accent1-color: #AAD8D3;
+    --opacity: 0.8;
+    }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--logofont);
+    font-weight: 100;
+}
+
+body {
+    padding: 100px;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+
+}
+
+.contact-box{
+    padding: 10px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    border-radius: 2%;
+}
+
+.right select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.right label {
+    font-weight: 700;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+
+.left{
+    background:  no-repeat center;
+    background-size: cover;
+    width: 30px;
+}
+
+iframe {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+    padding: 0.5rem 1rem;
+    color: var(--background-color);
+    font-size: 1.1rem;
+    border: none;
+    outline: var(--background-color2);
+    cursor: pointer;
+    transition: .3s;
+    -webkit-text-stroke: var(--background-color1) .5px;
+    width: 100%;   
+}
+
+
+.btn:hover{
+    background-color: aliceblue;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .left {
+        display: block;
+    }
+
+    iframe {
+        width: 350px;
+        margin-left: -12px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    body {
+        padding: 50px;
+    }
+}
