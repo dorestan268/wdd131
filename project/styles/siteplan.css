@@ -1,6 +1,3 @@
-
-
-
 :root{
     --logofont: "Black Ops One", system-ui;
     --headingfont: "Orbitron", sans-serif;
@@ -11,8 +8,7 @@
     --text-color: white;
     --accent1-color: #AAD8D3;
     --opacity: 0.8;
-    }
-
+}
 
 /* Universal Start */
 *{
@@ -22,16 +18,14 @@
     scroll-behavior: smooth;
 }
 
-
 button{
     padding: 2.5%;
     background-image: linear-gradient(to right, orange ,rgb(243, 70, 70));
     border-radius: 25px;
     cursor: pointer;
-    
 }
 
- button:hover{
+button:hover{
     background-image: linear-gradient(to left, orange ,rgb(243, 70, 70));
 }
 
@@ -40,15 +34,13 @@ button a{
 }
 /* Universal End*/
 
-
-
 /* <!-- Nav Section Start --> */
 .navBar{
     position: relative;
     top: 0;
     background-color: var(--background-color);
     padding: 1%;
- }
+}
 
 .topNav{
     display: flex;
@@ -88,16 +80,12 @@ button a{
 }
 /* <!-- Nav Section End --> */
 
-
-
 /* Welcome Section Start */
-
 .welcome {
     background-color: var(--background-color1);
     display: flex;
     margin: 5px;
 }
-
 
 .welcome .welcomeLeft{
     padding-top: 10px; 
@@ -116,7 +104,6 @@ button a{
 .welcome .welcomeLeft p:hover {
     color: orangered;
 }
-
 
 .welcome .slideshow{
     margin-left: 32rem;
@@ -151,7 +138,6 @@ button a{
     color: orange; 
 }
 
-
 .welcomeLeft h1 span:hover{
     text-decoration: 2px solid orange underline;  
     color: black;
@@ -161,7 +147,6 @@ button a{
     color: white;
     padding-bottom: 7%;
 }
-
 
 /* Slideshow container */
 .slideshow {
@@ -194,12 +179,9 @@ button a{
     border-radius: 50%;
 }
 
-    /* Welcome Section End */
+/* Welcome Section End */
 
-
-
-
-                /* About Section start */
+/* About Section start */
 .about {
     display: flex;
     margin: 5px;
@@ -218,14 +200,12 @@ fieldset {
     border-radius: 10px;
 }
 
-
 legend {
     color: black;
     font-size: 25px;
     margin-left: 100px;
     font-weight: bold;
 }
-
 
 fieldset p {
     margin-top: 50px;
@@ -234,7 +214,6 @@ fieldset p {
     font-family: var(--paragraphfont);
     font-size: 20px;
 }
-
 
 fieldset button {
     margin-left: 35%;
@@ -252,12 +231,9 @@ fieldset button a {
 fieldset button a:hover {
     color: white;
 }
-    /* About Section End */
-
-
+/* About Section End */
 
 /* Recipies Section Start */
-
 .recipies{
     margin-top: 10px;
     padding: 10px;
@@ -276,7 +252,6 @@ fieldset button a:hover {
     margin: 5%;
     box-shadow:5px 10px 10px 5px rgba(0, 0, 0, 0.1) ;
     border-radius: 4%;
-    
 }
 
 .recBox img{
@@ -286,7 +261,6 @@ fieldset button a:hover {
     margin-left: 15%;
 }
 /* Recipies Section End */
-
 
 /* Status Bar Start */
 .statusBar{
@@ -304,7 +278,6 @@ fieldset button a:hover {
 .status2 img {
     margin-left: 50px;
     width: 50px;
-    
 }
 
 .statusMain{
@@ -319,7 +292,6 @@ fieldset button a:hover {
     box-shadow:10px 10px 10px 10px  rgba(0, 0, 0, 0.2) ;
 }
 
-
 .statusMain h1 {
     margin-left: 50px;
 }
@@ -330,9 +302,6 @@ fieldset button a:hover {
     font-weight: bold;
 }
 
-
-
-
 .weather {
     background-color: aliceblue;
     padding: 10px 10px 30px 10px;
@@ -342,8 +311,6 @@ fieldset button a:hover {
     position: absolute;
     border-radius: 10px;
 }
-
-
 
 .weather h2::after {
     content: url('images/weather.svg');
@@ -359,7 +326,6 @@ fieldset button a:hover {
     margin-top: -50px;
 }
 
-
 .weather h2 {
     opacity: var(--opacity);
     font-family: var(--headind1);
@@ -373,9 +339,7 @@ fieldset button a:hover {
     margin-top: 10px;
 }
 
-
 /* Status Bar End */
-
 
 /* Food Setcion Start */
 .foodArea {
@@ -452,22 +416,19 @@ fieldset button a:hover {
     color: var(--text-color);
 }
 
-
-
-/* Food Setcion End */
-
-
+/* Food Section End */
 
 /* footer Start */
 .footer{
     background-color: #111;
     margin-top: -6%;
     padding-bottom: 2%;
-
 }
+
 .footer h1 span{
     color: orange;
 }
+
 .footer h1{
     font-family: var(--logofont);
     font-weight: 100;
@@ -485,16 +446,6 @@ fieldset button a:hover {
     color: var(--text-color);
 }
 /* footer end */
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive Media */
 @media (max-width: 32rem) {
@@ -516,7 +467,7 @@ fieldset button a:hover {
         width: 500px;
         background-color: aliceblue;
     }
-    
+
     .welcomeLeft h1 {
         align-items: center;
         width: 500px;
@@ -604,7 +555,7 @@ fieldset button a:hover {
         width: 20px;
         height: 10px;
     }
-    
+
     .status2 img {
         margin-left: 20px;
         width: 10px; 
@@ -618,7 +569,7 @@ fieldset button a:hover {
         margin-left: 5px;
         font-size: 15px;
     }
-    
+
     .statusMain p {
         color: black;
         font-size: 10px;
@@ -626,4 +577,3 @@ fieldset button a:hover {
         font-weight: bold;
     }
 }
-
