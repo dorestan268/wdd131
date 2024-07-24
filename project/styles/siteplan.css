@@ -512,19 +512,38 @@ fieldset button a:hover {
         width: 512px;
     }
 
-    .recipieControl {
-        display: block;
+    .recipiesHead .text-center {
+        width: 512px;
     }
+
+    .recipieControl {
+        margin-left: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 
     .recBox {
         background-color: aliceblue;
+        box-shadow: none;
+        text-align: center;
+        height: 400px;
+    }
+    
+
+    .recBox img {
+        margin-left: 40px;
+        width: 50%;
+        height: 80px;
     }
 
+    .foodArea {
+        display: block;
+    }
+    
     .statusBar {
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        display: flex;
+        display: block;
     }
 
     .statusMain {
@@ -587,6 +606,6 @@ fieldset button a:hover {
     }
 
     footer {
-        width: 500px;
+        width: 512px;
     }
 }
