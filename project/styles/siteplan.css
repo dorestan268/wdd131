@@ -451,3 +451,85 @@ fieldset button a:hover {
     color: var(--text-color);
 }
 /* Footer End */
+
+
+
+
+@media (max-width: 32rem) {
+    .topNav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .topNav .logo,
+    .topNav .navItems {
+        margin: 10px 0;
+    }
+
+    .welcome {
+        flex-direction: column;
+    }
+
+    .welcome .welcomeLeft,
+    .welcome .slideshow {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .welcome .welcomeLeft h1,
+    .welcome .welcomeLeft p,
+    .welcome .welcomeLeft button {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .aboutLeft img {
+        width: 100%;
+        margin: auto;
+    }
+
+    fieldset {
+        margin: 10px;
+    }
+
+    .recipieControl {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recBox {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .statusBar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statusMain {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .weather {
+        position: relative;
+        margin: 10px 0;
+        right: 0;
+    }
+
+    .foodArea {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foodsControl {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
