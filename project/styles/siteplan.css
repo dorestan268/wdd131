@@ -447,14 +447,17 @@ fieldset button a:hover {
 }
 /* footer end */
 
+
+
+
 /* Responsive Media */
 @media (max-width: 32rem) {
     .foodsControl {
-        flex: 1 1 calc(50% - 40px);
+        flex: 1 1 calc(50% - 50px);
     }
 
     .navBar {
-        width: 500px;
+        width: 512px;
     }
 
     .topNav {
@@ -464,13 +467,13 @@ fieldset button a:hover {
 
     .welcome {
         flex-direction: column;
-        width: 500px;
+        width: 512px;
         background-color: aliceblue;
     }
 
     .welcomeLeft h1 {
         align-items: center;
-        width: 500px;
+        width: 512px;
     }
 
     .welcomeLeft p {
@@ -496,12 +499,17 @@ fieldset button a:hover {
     }
 
     fieldset {
+        width: 512px;
         margin-left: 5px;
         padding-bottom: 25px;
     }
 
     .about {
         flex-direction: column;
+    }
+
+    .aboutLeft img {
+        width: 512px;
     }
 
     .recipieControl {
@@ -520,8 +528,9 @@ fieldset button a:hover {
     }
 
     .statusMain {
-        max-width: 100%;
-        margin: -40px 0 20px 0;
+        max-width: 500px;
+        padding: 0 20px 0 20px;
+        margin: -40px 0 20px 20px;
     }
 
     .weather {
@@ -575,5 +584,9 @@ fieldset button a:hover {
         font-size: 10px;
         font-style: italic;
         font-weight: bold;
+    }
+
+    footer {
+        width: 500px;
     }
 }
