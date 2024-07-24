@@ -517,11 +517,40 @@ fieldset button a:hover {
         width: 100%;
     }
 
+
     .weather {
-        position: relative;
+        position: static;
+        width: auto;
         margin: 10px 0;
-        right: 0;
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+
     }
+
+  
+
+    picture img {
+        border-bottom: 10px solid var(--primary-color);
+    }
+
+    .weather h2 {
+        background-color: white;
+        color: black;
+    }
+
+    .weather {
+        max-width: 100%; 
+    }
+
+    .weather img {
+        position: static;
+        margin: 0 auto 15px;
+        width: 70px;
+        height: auto;
+    }
+
+
 
     .foodArea {
         flex-direction: column;
