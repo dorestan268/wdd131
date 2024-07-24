@@ -455,7 +455,7 @@ fieldset button a:hover {
 
 
 
-@media (max-width: 32rem) {
+@media (max-width: 1300px) {
 
     .topNav {
         flex-direction: column;

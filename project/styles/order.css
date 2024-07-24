@@ -118,7 +118,7 @@ textarea{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .contact-box {
         grid-template-columns: 1fr;
     }

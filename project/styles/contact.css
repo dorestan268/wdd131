@@ -130,7 +130,7 @@ textarea{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 770x) {
     .contact-box {
         grid-template-columns: 1fr;
         padding: 20px;
